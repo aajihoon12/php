@@ -5,7 +5,7 @@
         <title><title>
     </head>
     <body>
-        <h1>WEB</h1>
+        <h1><a href='index.php'>WEB</a></h1>
         <ol>
             <?php
                 $list=scandir('data'); //data directory의 파일 목록을 스캔하여 배열방에 담아 반환
