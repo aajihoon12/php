@@ -24,14 +24,16 @@
         <h2>
             <?php
                 if(!isset($_GET['id']))
-                    echo 'WEB';
+                    echo 'WELCOME';
                 else    
                     echo $_GET['id'];
             ?>
         </h2>
         <?php
             if(isset($_GET['id']))
-                file_get_contents()
+                echo  file_get_contents('./data'.$_GET['id']);
+            else 
+                echo 'HELLO, PHP';
         ?>
     </body>
 </html>
