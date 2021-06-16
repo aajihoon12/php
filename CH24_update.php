@@ -19,7 +19,8 @@ include 'CH24_function.php';
         <?php if(isset($_GET['id'])) { ?>
             <a href="update.php?id=<?= $_GET['id'] ?>">update</a>
         <?php } ?>
-        <form action="CH23_create_process.php" method="post">
+        <form action="CH24_update_process.php" method="post">
+                <input type="hidden" name="old_title" vlaue="<?= $_GET['id']?> " />
             <p>
                 <input type="text" name="title" value="<?php print_title(); ?>" />
             </p>
